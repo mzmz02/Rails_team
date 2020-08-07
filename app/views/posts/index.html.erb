@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<div class="review">
+<h1>Review List</h1>
+
+<p id="alert"><%= alert %></p>
+
+  <ul class="reviewContent">
+    <% @posts.each do |post| %>
+      <li>
+          
+        <div class="profile">
+          <img class="userImage" src="<%= "/user_images/#{post.user.image_name}" %>">
+          <br>
+          &nbsp;
+          <%= post.user.name %>
+        </div>
+
+        <div class="other">
+          <div class="image">
+            <%= image_tag post.image_path_url ,size: '200x150', class: "postImage" %>
+          </div>
+
+          <div class="good">
+            <% if Good.find_by(user_id: @current_user.id, post_id: post.id) %>
+              <%= link_to( "/goods/#{post.id}/destroy", {method: "post"}) do %>
+                <span class="fa fa-heart notGood"></span>
+            <% end %>
+        
+            <% else %>
+              <%= link_to("/goods/#{post.id}/create", {method: "post"}) do %>
+                <span class="fa fa-heart onGood"></span>
+              <% end %>
+            <% end %> 
+            <%= post.goods.count %>
+          </div>
+
+          <div class="country_star">
+            country : 
+            <%= post.country %>
+            &nbsp;&nbsp;
+            <% for i in 1..(post.points) do %>
+              <span class="fa fa-star"></span>
+            <% end %>
+          </div>
+                
+          <div class="content">
+            <%= post.content %>
+          </div>
+
+          <div class="edit_delete">
+            <% @current_user=User.find_by(id: session[:user_id]) %>
+              
+            <% @current_user=User.find_by(id: session[:user_id]) %>
+            <% if post.user.id == @current_user.id %>
+              <%= link_to 'Edit', edit_post_path(post) %>
+              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

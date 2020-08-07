@@ -1,0 +1,131 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.back{
+    color:white;
+}
+
+.notGood{
+    color:#ff2580;
+}
+
+.onGood{
+    color:#8899a6;
+}
+
+.review{
+    background-color: rgb(113, 228, 168);
+    padding:20px 30px 20px 10px;
+    border-radius: 10px;
+}
+
+.review h1{
+    color:white;
+    font-size: 36px;
+}
+
+.reviewContent{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-content: center;
+}
+
+.reviewContent li{
+
+    flex-basis: 500px;
+    text-align: center;
+
+    text-align: center;
+    margin: 1.5em 10px;
+    padding: 20px 10px;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 15px;
+}
+
+.userImage{
+    width: 50px;
+    height: 50px;
+    margin-left:10px;
+}
+
+.postImage{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.profile{
+    float:left;
+}
+
+.good{
+    float: left;
+    padding-left:100px;
+}
+
+.country_star{
+    /* floatを解除 */
+    clear: both;
+}
+
+
+.fa-star{
+    color:rgb(251, 218, 26);
+}
+
+.content{
+    padding:10px 0;
+    margin:0 10px;
+}
+
+.edit_delete{
+    float:right;
+    padding-right:3px;
+    font-size:12px;
+}
+
+.newPost{
+    color: whitesmoke;
+    font-weight: 900;
+    margin: 0px;
+    background-size: cover;
+    height: 800px;
+    // padding-top: 30px;
+    padding-bottom: 30px;
+    background-image:url('https://d1m1bsps9tiz0g.cloudfront.net/system/App/Blog/thumbnails/000/001/449/large/f02aea6256a3b9b3426f1ab46acf0ba8.jpg');
+}
+.backgroundimage{
+    margin: 0px;
+    background: rgba(255,255,255,0.5);
+    background-size: cover;
+    height: 800px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.edittop{
+    font-size: 15px;
+    color:whitesmoke;
+    background:linear-gradient(to bottom,rgba(158, 226, 219, 0.89) 0%,rgba(168, 195, 235, 0.89) 100%);
+    height: 70vh;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    
+}
+
+h1{
+    font-size: 40px;
+}
+
+#error_explanation{
+    color:black;
+}
+
+.error{
+    display: inline-block;
+    margin:0 auto
+}

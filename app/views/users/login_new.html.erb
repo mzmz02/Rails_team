@@ -1,0 +1,21 @@
+<ul class="welcomePage">
+    <li>
+        <%= link_to("Welcome Page", "/") %>
+    </li>
+</ul>
+<div class="logintop">
+    <div class="loginimage">
+        <h1 class="loginh1">Login</h1>
+        <br>
+        <p id="alert"><%= alert %></p>
+        <%= form_tag("/login") do %>
+            <p>Mail Adress</p>
+            <input name="email" value="<%= @email %>">
+            <p>Password</p>
+            <input type="password" name="password" value="<%= @password %>">
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        <% end %>
+    </div>
+</div>

@@ -1,0 +1,174 @@
+.welcomePage li{
+    text-align: left;
+    font-size: 16px;
+}
+
+
+img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.b{
+    display: none;
+}
+
+.userProfile{
+    padding:20px 30px 20px 20px;
+    margin-left: 40px;
+    // background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.notGood{
+    color:#ff2580;
+}
+
+.onGood{
+    color:#8899a6;
+}
+
+.userreview{
+    background-color: rgb(113, 207, 228);
+    padding:20px 30px 20px 10px;
+    border-radius: 10px;
+}
+
+.userreview h1{
+    color:white;
+    font-size: 36px;
+}
+
+.userreview h2{
+    margin-top: 3px;;
+    color:white;
+    font-size: 30px;
+}
+
+.userreview p{
+    color:white;
+    font-size: 20px;
+}
+
+
+.reviewContent{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-content: center;
+}
+
+.reviewContent li{
+    flex-basis: 500px;
+    text-align: center;
+
+    text-align: center;
+    margin: 1.5em 10px;
+    padding: 20px 10px;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 15px;
+}
+
+.userImage{
+    width: 50px;
+    height: 50px;
+}
+
+.postImage{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.profile{
+    float:left;
+}
+
+.good{
+    float: left;
+    padding-left:100px;
+}
+
+.country_star{
+    /* floatを解除 */
+    clear: both;
+}
+
+
+.fa-star{
+    color:rgb(251, 218, 26);
+}
+
+.content{
+    padding:10px 0;
+}
+
+.edit_delete{
+    float:right;
+    padding-right:3px;
+    font-size:12px;
+}
+
+p{
+    font-family:  cursive;
+}
+
+.loginh1{
+    font-size: 25px;
+}
+
+.logintop{
+    margin: 0px;
+    background-size: cover;
+    height: 600px;
+    background-image: url(https://www.tabikobo.com/special/zekkei/images/img03.jpg);
+    background-color: rgb(221, 151, 221);
+}
+
+.loginimage{
+    margin: 0px;
+    background: rgba(255,255,255,0.5);
+    background-size: cover;
+    height: 600px;
+    padding-top: 100px;
+
+}
+
+.userList{
+    padding:30px 100px;
+    background:linear-gradient(45deg,rgb(236, 240, 159) 0%,rgb(236, 240, 159) 50%,rgb(158, 226, 219) 50%,rgb(158, 226, 219) 100%);
+}
+
+.userList h1{
+    font-size:36px;
+    color:white;
+}
+
+.userIndividual{
+    padding-top:20px;
+}
+
+.userName{
+    font-size:24px;
+}
+
+.edittop{
+    font-size: 15px;
+    color:whitesmoke;
+    background:linear-gradient(to bottom,rgba(158, 226, 219, 0.89) 0%,rgba(168, 195, 235, 0.89) 100%);
+    height: 70vh;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    
+}
+
+.edith1{
+    font-size: 40px;
+}
+
+.back{
+    color:white;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel</title>
+    <%= csrf_meta_tags %>
+    <script src="https://kit.fontawesome.com/a1de0a5eef.js" crossorigin="anonymous"></script> 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <% current_user=User.find_by(id: session[:user_id]) %>
+      <% if current_user %>
+        <ul class="a">
+          <li>
+            <%= link_to(current_user.name, "/users/#{current_user.id}") %>
+          </li>
+          <li>
+            <%= link_to("Review List", "/posts") %>
+          </li>
+          <li>  
+            <%= link_to("New Post", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("User List", "/users/index") %>
+          </li>
+          <li>
+            <%= link_to("Logout", "/logout", {method: :post}) %>
+          </li>
+        </ul>
+      <% else %>
+        <ul class="b">
+          <li>
+            <%= link_to("Sign Up", "/users/new") %>
+          </li>
+          <li>
+            <%= link_to("Login", "/login") %>
+          </li>
+        </ul>
+      <% end %>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>

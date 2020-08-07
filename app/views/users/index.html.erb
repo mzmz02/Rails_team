@@ -1,0 +1,12 @@
+<div class="userList">
+    <p id="alert"><%= alert %></p>
+    <h1>User List</h1>
+    <% @users.each do |user| %>
+      <div class="userIndividual">
+        <div class="userIndividualImage">
+          <img src="<%= "/user_images/#{user.image_name}" %>">
+        </div>
+          <%= link_to(user.name, "/users/#{user.id}" , class:"userName") %>
+      </div>
+    <% end %>
+</div>

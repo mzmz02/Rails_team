@@ -1,0 +1,16 @@
+<div class="edittop">
+    <h1 class="edith1">Editing Profile</h1>
+
+    <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
+        <p>Use Name</p>
+        <input name="name" value="<%= @user.name %>" >
+        <p>User Image</p>
+        <input name="image" type="file">
+        <p>Mail Address</p>
+        <input name="email" value="<%= @user.email %>" >
+        <input type="submit" value="upload">
+    <% end %>
+    <br>
+    <%= link_to 'Back', "/users/index", class:"back" %>
+</div>
+

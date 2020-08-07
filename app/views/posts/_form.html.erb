@@ -1,0 +1,47 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <div class="error">
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <% current_user=User.find_by(id: session[:user_id] ) %>
+    <% current_user.name %>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :post_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, id: :post_content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_path %>
+    <%= form.file_field :image_path, id: :post_image_path %>
+  </div>
+
+  <div class="field">
+    <%= form.label :points %>
+    <%= form.number_field :points, id: :post_points  %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  </div>
+<% end %>

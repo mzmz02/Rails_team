@@ -1,0 +1,73 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.toppage{
+    margin: 0px;
+    background-size: cover;
+    width: 90vw;
+    height: 600px;
+    background:linear-gradient(to bottom,rgba(158, 226, 219, 1) 0%,rgba(158, 191, 240, 1) 100%);
+    // background-image:url(https://www.tabikobo.com/special/zekkei/images/canada01.jpg);
+}
+
+.topimage{
+    font-size: 15px;
+    color: rgb(246, 247, 245);
+    // color: rgb(52, 10, 119);
+    margin: 0px;
+    // background: rgba(255,255,255,0.5);
+    background-size: cover;
+    height: 80vh;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.toph1{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loop_wrap {
+    padding-top:30px;
+    display: flex;
+    width: 90vw;
+    height: 300px;
+    overflow: hidden;
+}
+  
+.loop_wrap img {
+    border-radius: 0;
+    width: 360px;
+    height: 300px;
+}
+
+@keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+@keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+}
+
+.loop_wrap img:first-child {
+    animation: loop 50s -25s linear infinite;
+  }
+  
+.loop_wrap img:last-child {
+    animation: loop2 50s linear infinite;
+}
+
+.loop_wrap:hover img {
+    animation-play-state: paused;
+}

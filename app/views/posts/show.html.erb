@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @post.country %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+
+<p>
+  <strong>Image path:</strong>
+  <%= image_tag @post.image_path_url ,size: '200x150' %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <% for i in 1..@post.points do %>
+    <span class="fa fa-star"></span>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
