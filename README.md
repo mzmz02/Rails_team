@@ -1,7 +1,7 @@
 # Travel Reviews
 2人でRailsアプリケーションを作成した。
 
-2人で作成後、Herokuを用いて公開した。
+2人で作成後、1人でHerokuを用いて公開した。
 https://travelreview.herokuapp.com/
 
 Herokuで公開するのにてこずってしまったので、Qiitaでまとめてる。
