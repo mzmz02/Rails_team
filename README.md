@@ -4,6 +4,9 @@
 2人で作成後、Herokuを用いて公開した。
 https://travelreview.herokuapp.com/
 
+Herokuで公開するのにてこずってしまったので、Qiitaでまとめてる。
+（https://qiita.com/mzmz__02/items/e653cebf095a0aa9cf7c https://qiita.com/mzmz__02/items/21787dcb90ca91bcbe98)
+
 <img width="567" alt="rails" src="https://user-images.githubusercontent.com/65856455/89713114-73f3bd80-d9d0-11ea-9861-0d622faed37b.PNG">
 
 # Dependency
