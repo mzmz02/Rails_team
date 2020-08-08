@@ -1,5 +1,6 @@
 # Travel Reviews
 2人でRailsアプリケーションを作成した。
+
 <img width="567" alt="rails" src="https://user-images.githubusercontent.com/65856455/89713114-73f3bd80-d9d0-11ea-9861-0d622faed37b.PNG">
 
 # Dependency
@@ -7,6 +8,7 @@ Ruby/Ruby on Railsを用いている。
 
 # 役割分担(私が担当したところ）
 Userモデルの作成（Scaffoldを使わずに自分でルーティングやコントローラ、ビューファイルなどを作成）
+
 ログイン・ログアウトページとそれらの機能の作成
 ログインしているユーザを判定し、それに応じたヘッダーの作成（各ページのリンクに飛べるように紐づけ）
 ページのアクセス制限（ログインしているユーザか、編集や削除の権限があるユーザか）
