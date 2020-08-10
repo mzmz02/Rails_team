@@ -7,7 +7,7 @@ https://travelreview.herokuapp.com/
 Herokuで公開するのにてこずってしまったので、Qiitaでまとめてる。
 （https://qiita.com/mzmz__02/items/e653cebf095a0aa9cf7c https://qiita.com/mzmz__02/items/21787dcb90ca91bcbe98)
 
-<img width="492" alt="rails" src="https://user-images.githubusercontent.com/65856455/89738791-5f89f080-dab6-11ea-9a9f-6d65be4c9fe4.PNG">
+<img width="432" alt="rails" src="https://user-images.githubusercontent.com/65856455/89770883-5cd0df00-db3a-11ea-92c7-b4858060b523.PNG">
 
 # Dependency
 Ruby/Ruby on Railsを用いている。
